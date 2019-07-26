@@ -1,7 +1,9 @@
 let canvas = document.getElementById("sandbox"), context = canvas.getContext("2d");
 let square, circle;
+let line = new Path2D();
 
 //context.fillRect(50,25,200,250);
+/*
 square = new Path2D();
 square.moveTo(50,50);
 square.lineTo(250,50);
@@ -13,3 +15,12 @@ context.stroke(square);
 circle = new Path2D();
 circle.arc(150,150,100,0, 2*Math.PI);
 context.stroke(circle);
+*/
+line.moveTo(0,0);
+line.lineTo(300,300);
+
+context.fillStyle = "red";
+context.fillRect(0,0,200,200);
+
+context.fillStyle="rgba(0,255,0,0.5)";
+context.fillRect(100,100,300,300);
